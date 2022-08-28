@@ -6,9 +6,9 @@
 
 proc WeatherInfo {} {
 
-set runcmd [exec python3 /home/SVXCARD/weather.py];
-set splitcorona [split $runcmd /]
-lassign $splitcorona temperature tempmini tempmaxi pression humidite ventDirection ventVitesse
+set runcmd [exec python3 /home/SVXCARD/meteo-relais.py];
+set splitmeteo [split $runcmd /]
+lassign $splitmeteo temperature tempmini tempmaxi pression humidite ventDirection ventVitesse
 
 puts "Temperature: $temperature °"
 puts "Temperature mini: $tempmini °"
@@ -30,7 +30,6 @@ playMsg "SVXCard/Weatherstation" "weatherinfo"
 
 playMsg "SVXCard/Weatherstation" "tempext"
 playTemp $temperature
-playMsg "SVXCard/Weatherstation" "degrees"
 
 #
 #Temperature mini
@@ -38,7 +37,7 @@ playMsg "SVXCard/Weatherstation" "degrees"
 
 #playMsg "SVXCard/Weatherstation" "tempmini"
 #playTemp $tempmini
-#playMsg "SVXCard/Weatherstation" "degrees"
+
 
 #
 #Temperature maxi
@@ -46,7 +45,7 @@ playMsg "SVXCard/Weatherstation" "degrees"
 
 #playMsg "SVXCard/Weatherstation" "tempmaxi"
 #playTemp $tempmaxi
-#playMsg "SVXCard/Weatherstation" "degrees"
+
 
 
 #
