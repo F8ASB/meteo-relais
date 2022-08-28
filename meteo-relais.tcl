@@ -64,7 +64,7 @@ playMsg "SVXCard/Weatherstation" "hpa"
 
 playMsg "SVXCard/Weatherstation" "humidity"
 playNumber  $humidite
-playMsg "Default" "pourcent"
+playMsg "Default" "percent"
 
 #
 #Direction du vent
