@@ -54,7 +54,7 @@ playMsg "SVXCard/Weatherstation" "degrees"
 #
 
 playMsg "SVXCard/Weatherstation" "pressure"
-playNumber  $pression
+playFourDigitNumber $pression
 playMsg "SVXCard/Weatherstation" "hpa"
 
 
@@ -79,6 +79,7 @@ playMsg "SVXCard/Weatherstation" "degrees"
 #
 
 playMsg "SVXCard/Weatherstation" "windspeed"
+playNumber  $hventVitesse
 playMsg "SVXCard/Weatherstation" "kmh"
 
 return 1
