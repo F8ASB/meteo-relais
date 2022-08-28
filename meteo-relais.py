@@ -21,5 +21,5 @@ pression = data["main"]["pressure"]
 humidite = data["main"]["humidity"]
 ventDirection = data["wind"]["deg"]
 ventVitesse = data["wind"]["speed"]
-ventVitesse = "112.55"
+
 print(str(temperature)[:4]+"/"+str(tempmini)[:4]+"/"+str(tempmaxi)[:4]+"/"+str(pression)+"/"+str(humidite)+"/"+str(ventDirection)+"/"+str(ventVitesse)[:-1])
