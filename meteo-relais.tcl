@@ -62,7 +62,7 @@ playMsg "SVXCard/Weatherstation" "hpa"
 #Humidité
 #
 
-playMsg "SVXCard/Weatherstation" "humidity"
+playMsg "SVXCard/Weatherstation" "Humity"
 playNumber  $humidite
 playMsg "Default" "percent"
 
