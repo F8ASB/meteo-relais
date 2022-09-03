@@ -12,7 +12,7 @@ city = "vagney"
 url = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=%s&appid=%s'% (city, api_key)
 response = requests.get(url)
 data = json.loads(response.text)
-print(data)
+#print(data)
 
 temperature = data["main"]["temp"]
 tempmini = data["main"]["temp_min"]
