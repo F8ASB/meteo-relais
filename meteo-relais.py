@@ -18,6 +18,8 @@ temperature = data["main"]["temp"]
 tempmini = data["main"]["temp_min"]
 tempmaxi = data["main"]["temp_max"]
 pression = data["main"]["pressure"]
+if len(str(pression)) == 3:
+    pression = "0"+(str(pression))
 humidite = data["main"]["humidity"]
 ventDirection = data["wind"]["deg"]
 ventVitesse = data["wind"]["speed"]
